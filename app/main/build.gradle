@@ -6,7 +6,6 @@ configureJavaModuleWithSpring(project)
 
 dependencies {
     implementation project(':app:payment:adapters:driven:persistence')
-    implementation project(':app:payment:adapters:driving:rest')
     implementation project(':app:payment:core:domain')
     implementation project(':app:payment:core:service')
     implementation project(':app:payment:core:port:input')
@@ -17,6 +16,12 @@ dependencies {
     implementation project(':app:user:core:service')
     implementation project(':app:user:core:port:input')
     implementation project(':app:user:core:port:output')
+
+    implementation project(':app:api:adapters:driving:rest')
+    implementation project(':app:api:core:port:input')
+    implementation project(':app:api:core:port:output')
+    implementation project(':app:api:core:service')
+    implementation project(':app:web:adapters:driving:rest')
 }
 
 springBoot {

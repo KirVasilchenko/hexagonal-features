@@ -1,0 +1,12 @@
+group 'com.github.kirvasilchenko.hexagon.app.api.adapters.driving.rest'
+
+configureJavaModuleWithSpring(project)
+addSpringWeb(project)
+addSpringDocWeb(project)
+
+dependencies {
+    implementation project(':app:api:core:port:input')
+
+    implementation project(':app:payment:core:domain')
+    implementation project(':app:payment:core:port:input')
+}

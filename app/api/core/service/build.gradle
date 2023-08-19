@@ -1,4 +1,4 @@
-group 'com.github.kirvasilchenko.hexagon.app.payment.core.service'
+group 'com.github.kirvasilchenko.hexagon.app.api.core.service'
 
 configureJavaModuleWithSpring(project)
 
@@ -9,4 +9,7 @@ dependencies {
 
     implementation project(':app:user:core:domain')
     implementation project(':app:user:core:port:input')
+
+    implementation project(':app:api:core:port:input')
+    implementation project(':app:api:core:port:output')
 }

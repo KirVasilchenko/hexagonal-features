@@ -1,0 +1,7 @@
+group 'com.github.kirvasilchenko.hexagon.app.api.core.port.output'
+
+configureJavaModule(project)
+
+dependencies {
+    implementation project(':app:payment:core:domain')
+}

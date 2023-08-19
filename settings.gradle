@@ -1,7 +1,6 @@
 rootProject.name = 'hexagonal-features'
 
 include 'app:main'
-include 'app:payment:adapters:driving:rest'
 include 'app:payment:adapters:driven:persistence'
 include 'app:payment:core:domain'
 include 'app:payment:core:service'
@@ -13,3 +12,9 @@ include 'app:user:core:domain'
 include 'app:user:core:service'
 include 'app:user:core:port:input'
 include 'app:user:core:port:output'
+
+include 'app:web:adapters:driving:rest'
+include 'app:api:adapters:driving:rest'
+include(':app:api:core:port:input')
+include(':app:api:core:port:output')
+include(':app:api:core:service')
