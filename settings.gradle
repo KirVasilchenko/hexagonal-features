@@ -1,0 +1,11 @@
+rootProject.name = 'hexagonal-features'
+
+include 'apps:hexagon:main'
+
+include 'apps:hexagon:adapters:driving:rest'
+include 'apps:hexagon:adapters:driven:persistence'
+
+include 'apps:hexagon:core:domain'
+include 'apps:hexagon:core:service'
+include 'apps:hexagon:core:port:input'
+include 'apps:hexagon:core:port:output'
