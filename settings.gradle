@@ -1,11 +1,15 @@
 rootProject.name = 'hexagonal-features'
 
-include 'apps:hexagon:main'
+include 'app:main'
+include 'app:payment:adapters:driving:rest'
+include 'app:payment:adapters:driven:persistence'
+include 'app:payment:core:domain'
+include 'app:payment:core:service'
+include 'app:payment:core:port:input'
+include 'app:payment:core:port:output'
 
-include 'apps:hexagon:adapters:driving:rest'
-include 'apps:hexagon:adapters:driven:persistence'
-
-include 'apps:hexagon:core:domain'
-include 'apps:hexagon:core:service'
-include 'apps:hexagon:core:port:input'
-include 'apps:hexagon:core:port:output'
+include 'app:user:adapters:driven:persistence'
+include 'app:user:core:domain'
+include 'app:user:core:service'
+include 'app:user:core:port:input'
+include 'app:user:core:port:output'

@@ -1,0 +1,3 @@
+group 'com.github.kirvasilchenko.hexagon.app.payment.core.domain'
+
+configureJavaModule(project)

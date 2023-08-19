@@ -1,0 +1,9 @@
+group 'com.github.kirvasilchenko.hexagon.app.user.core.domain'
+
+configureJavaModuleWithSpring(project)
+
+dependencies {
+    implementation project(':app:user:core:domain')
+    implementation project(':app:user:core:port:input')
+    implementation project(':app:user:core:port:output')
+}

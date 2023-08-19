@@ -1,3 +1,0 @@
-group 'com.github.kirvasilchenko.hexagon.apps.hexagon.core.domain'
-
-configureJavaModule(project)

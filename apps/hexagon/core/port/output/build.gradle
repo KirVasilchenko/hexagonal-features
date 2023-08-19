@@ -1,7 +1,0 @@
-group 'com.github.kirvasilchenko.hexagon.apps.hexagon.core.port.output'
-
-configureJavaModule(project)
-
-dependencies {
-    implementation project(':apps:hexagon:core:domain')
-}

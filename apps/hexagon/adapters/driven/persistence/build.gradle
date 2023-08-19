@@ -1,9 +1,0 @@
-group 'com.github.kirvasilchenko.hexagon.apps.hexagon.adapters.driven.persistence'
-
-configureJavaModuleWithSpring(project)
-addSpringData(project)
-
-dependencies {
-    implementation project(':apps:hexagon:core:domain')
-    implementation project(':apps:hexagon:core:port:output')
-}

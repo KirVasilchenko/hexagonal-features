@@ -1,0 +1,7 @@
+group 'com.github.kirvasilchenko.hexagon.app.payment.core.port.input'
+
+configureJavaModule(project)
+
+dependencies {
+    implementation project(':app:payment:core:domain')
+}

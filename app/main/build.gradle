@@ -1,0 +1,32 @@
+group 'com.github.kirvasilchenko.hexagon.app'
+
+apply plugin: 'org.springframework.boot'
+
+configureJavaModuleWithSpring(project)
+
+dependencies {
+    implementation project(':app:payment:adapters:driven:persistence')
+    implementation project(':app:payment:adapters:driving:rest')
+    implementation project(':app:payment:core:domain')
+    implementation project(':app:payment:core:service')
+    implementation project(':app:payment:core:port:input')
+    implementation project(':app:payment:core:port:output')
+
+    implementation project(':app:user:adapters:driven:persistence')
+    implementation project(':app:user:core:domain')
+    implementation project(':app:user:core:service')
+    implementation project(':app:user:core:port:input')
+    implementation project(':app:user:core:port:output')
+}
+
+springBoot {
+    buildInfo()
+    mainClass = 'com.github.kirvasilchenko.hexagon.app.HexagonalFeaturesApplication'
+}
+
+bootJar {
+    enabled = true
+    manifest {
+        attributes 'Main-Class': 'org.springframework.boot.loader.PropertiesLauncher'
+    }
+}

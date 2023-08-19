@@ -1,0 +1,7 @@
+group 'com.github.kirvasilchenko.hexagon.app.user.core.port.input'
+
+configureJavaModule(project)
+
+dependencies {
+    implementation project(':app:user:core:domain')
+}
