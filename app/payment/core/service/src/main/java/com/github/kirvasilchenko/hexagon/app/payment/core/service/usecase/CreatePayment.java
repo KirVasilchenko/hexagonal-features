@@ -26,7 +26,7 @@ public class CreatePayment implements CreatePaymentUseCase {
     public Payment invoke(Payment payment, String bearer) {
         var user = getUser.invoke(bearer);
 
-        if (!validatePayment.invoke(payment, user)) {
+        if (!validatePayment.invoke(payment)) {
             return null;
         }
 

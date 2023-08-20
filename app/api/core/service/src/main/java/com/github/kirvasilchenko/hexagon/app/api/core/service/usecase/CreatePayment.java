@@ -32,7 +32,7 @@ public class CreatePayment implements CreatePaymentUseCase {
 
         var user = getUser.invoke(userId);
 
-        if (!validatePayment.invoke(payment, user)) {
+        if (!validatePayment.invoke(payment)) {
             return null;
         }
 

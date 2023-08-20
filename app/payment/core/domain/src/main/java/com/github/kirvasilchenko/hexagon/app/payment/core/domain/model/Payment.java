@@ -11,13 +11,10 @@ import java.util.UUID;
 @Builder
 public class Payment {
     UUID id;
-
     BigDecimal amount;
     String activity;
-
     UUID sender;
     UUID receiver;
-
     LocalDateTime createdAt;
     LocalDateTime processedAt;
 }
